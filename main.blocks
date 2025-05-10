@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="RuK2Q!(GkrZt$vOgNRJ|">serialData</variable></variables><block type="pxt-on-start" id="skb^vJ0x6$76K[4YZgit" x="0" y="0"></block><block type="device_forever" id="j-kMfVOex3m~]x=qH{:l" x="205" y="0"></block><block type="serial_on_data_received" id="fWu5wr~BgyasXDeeg+4G" x="78" y="183"><value name="delimiters"><shadow type="serial_delimiter_conv" id="AS8U(Pxt1UBuE2B9()b9"><field name="del">Delimiters.NewLine</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="b9$cEHNe[mKDiepR7dX5"><field name="VAR" id="RuK2Q!(GkrZt$vOgNRJ|">serialData</field><value name="VALUE"><shadow type="math_number" id="J}n3~0rnQq^LN/?AWHkQ"><field name="NUM">0</field></shadow><block type="serial_read_until" id="b+}XFEsNS[C(I,PQ]_h%"><value name="delimiter"><shadow type="serial_delimiter_conv" id="cY*hx}2*)oLGH_LU@+1T"><field name="del">Delimiters.NewLine</field></shadow></value></block></value><next><block type="controls_if" id="CJ6`?9aX5VH6EecCWm3f"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="HIZBVXbx/:65(TaP0oBN"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="jvTOW;~0K~Jbfjs7Y#{M"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="+f]j[`EJSUzh7@}7MMHB"><field name="NUM">0</field></shadow><block type="variables_get" id=";2f@rAmgAKxZ])j3aFvT"><field name="VAR" id="RuK2Q!(GkrZt$vOgNRJ|">serialData</field></block></value><value name="B"><shadow type="math_number" id="Nx;[_kil|j$b~2;LEVgB"><field name="NUM">0</field></shadow><block type="text" id="H]9fw5TQH2%_l7o0q9b0"><field name="TEXT">Apple</field></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="6WV_,-A#G9Q490rx*1b("><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        # # # # # 
+        . # # # .
+        `</field></block></statement><value name="IF1"><shadow type="logic_boolean" id="$W9#1SuIIr@mIDa:Wsu2"><field name="BOOL">FALSE</field></shadow><block type="logic_compare" id="jYhH6)10)MB8|Jl5%TN3"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="nj/Z5ef~@K~9H$i91tl:"><field name="NUM">0</field></shadow><block type="variables_get" id="2$ao69^mC1q4+`Hq(IS~"><field name="VAR" id="RuK2Q!(GkrZt$vOgNRJ|">serialData</field></block></value><value name="B"><shadow type="math_number" id="vEv8ljrk*N8Zi(n[h5_J"><field name="NUM">0</field></shadow><block type="text" id="?Bv_iAPDN[v_XP`P4upw"><field name="TEXT">Banana</field></block></value></block></value><statement name="DO1"><block type="device_show_leds" id="{O@.D@T]#s-,h-kI[;kf"><field name="LEDS">`
+        # . . . . 
+        # # . . . 
+        . # # . . 
+        . # # # . 
+        . . # # #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="YX4P:n0Ug#M[}=_Mf3N~"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field></block></statement></block></next></block></statement></block></xml>
